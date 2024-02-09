@@ -12,22 +12,22 @@ import (
 *=======================================================================================================================**/
 
 var (
-	dbCms          = config.DbValidator
+	dbValidator    = config.DbValidator
 	dbMaxIdleConns = 10
 	dbMaxConns     = 100
 )
 
 func ValidatorDBConnection(ip string) (*sql.DB, error) {
-	db, err := sql.Open("mysql", dbCms)
+	db, err := sql.Open("mysql", dbValidator)
 	if err != nil {
-		go middlewares.GenerateLoging(ip, "error", "CmsConnection", "", &err)
+		go middlewares.GenerateLoging(ip, "error", "ValidatorDBConnection", "", &err)
 
 		return nil, err
 	}
 
 	err = db.Ping()
 	if err != nil {
-		go middlewares.GenerateLoging(ip, "error", "CmsConnectionPing", "", &err)
+		go middlewares.GenerateLoging(ip, "error", "ValidatorDBConnectionPing", "", &err)
 
 		return nil, err
 	}

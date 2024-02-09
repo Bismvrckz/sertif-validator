@@ -1,8 +1,8 @@
 package utils
 
 import (
-	"excelvis/app/logging"
 	"os"
+	"sertif_validator/app/logging"
 )
 
 func GetEnv(key, fallback string) string {

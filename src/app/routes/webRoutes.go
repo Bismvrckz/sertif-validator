@@ -1,9 +1,8 @@
 package routes
 
 import (
-	"cms-fello/app/config"
-	view_controller "cms-fello/service/controller/web"
 	"net/http"
+	"sertif_validator/app/config"
 
 	"github.com/labstack/echo-contrib/session"
 	"github.com/labstack/echo/v4"
@@ -36,16 +35,6 @@ func webRoutes(srv *echo.Echo) {
 	/*------------------------------------------ VIEWS ------------------------------------------*/
 	web := srv.Group(config.BaseURL, WebAuthMiddleware)
 
-	web.GET("/login", view_controller.LoginView)
-	web.GET("/markom", view_controller.DashboardView)
-
-	// Artikel
-	web.GET("/markom/artikel", view_controller.ListArtikelView)
-	web.GET("/markom/artikel/tambah", view_controller.TambahArtikelView)
-	web.GET("/markom/artikel/detail/id/:id_artikel", view_controller.DetailArtikelView)
-
-	// Banner
-	web.GET("/mobile/banner", view_controller.ListBannerView)
-	web.GET("/mobile/banner/tambah", view_controller.TambahBannerView)
-	web.GET("/mobile/banner/ubah/id/:id_banner", view_controller.UbahBannerView)
+	// web.GET("/login", view_controller.LoginView)
+	web.GET("/", view_controller.DashboardView)
 }

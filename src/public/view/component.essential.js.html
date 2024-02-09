@@ -1,0 +1,11 @@
+{{define "essential.js"}}
+<script type="text/javascript">
+  let BASE_URL = "{{.prefix}}";
+</script>
+
+<!--begin::Global Javascript Bundle(used by all pages)-->
+<script src="{{.prefix}}/static/assets/plugins/global/plugins.bundle.js"></script>
+<script src="{{.prefix}}/static/assets/js/scripts.bundle.js"></script>
+<!--end::Global Javascript Bundle-->
+
+{{end}}

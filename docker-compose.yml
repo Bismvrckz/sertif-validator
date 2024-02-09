@@ -6,7 +6,7 @@ services:
     image: golang:1.22.0-alpine3.19
     volumes:
       - sertif_validator_go:/root
-      - ./src/src:/root/sertif_validator
+      - ./src:/root/sertif_validator
       - ./go-build:/root/.cache/go-build
       - ./go-mod:/go/pkg/mod
     command: sh -c "cd /root/sertif_validator && go run app/main-sertifValidator.go"

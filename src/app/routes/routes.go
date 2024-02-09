@@ -4,6 +4,8 @@ import (
 	"net/http"
 	"sertif_validator/app/config"
 	"sertif_validator/app/logging"
+	api_controller "sertif_validator/app/service/controller/api"
+	view_controller "sertif_validator/app/service/controller/web"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
@@ -122,14 +124,12 @@ func (srv *VALIDATOR) Start(port string) {
 
 	api := srv.newEcho.Group(config.BaseURL+"/api", ApiAuthMiddleware)
 
-	api.POST("/login", api_controller.LoginUser)
-	api.POST("/logout", api_controller.LogoutUser)
-	api.GET("/session/check", api_controller.CheckSession)
+	// api.POST("/login", api_controller.LoginUser)
+	// api.POST("/logout", api_controller.LogoutUser)
+	// api.GET("/session/check", api_controller.CheckSession)
 
-	// Banner Update
-	api.POST("/mobile/banner/urutan/ubah", api_controller.UpdateBannerList)
-	api.POST("/mobile/banner/tambah", api_controller.TambahBanner)
-	api.POST("/mobile/banner/ubah", api_controller.UbahBanner)
+	// Certificate
+	api.GET("/certificate/validate/id/:certificate_id", api_controller.GetCertificateByID)
 
 	/*------------------------------------------ server start ------------------------------------------*/
 	srv.newEcho.Logger.Fatal(srv.newEcho.Start(port))
