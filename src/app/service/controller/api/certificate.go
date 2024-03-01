@@ -25,8 +25,8 @@ func GetCertificateByID(ctx echo.Context) error {
 	}
 
 	return ctx.JSON(http.StatusOK, &Response{
-		Rc:   "00",
-		Val:  result,
-		Desc: "Sukses",
+		ResponseCode:    "00",
+		AdditionalInfo:  result,
+		ResponseMessage: "Sukses",
 	})
 }

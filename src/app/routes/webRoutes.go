@@ -3,6 +3,7 @@ package routes
 import (
 	"net/http"
 	"sertif_validator/app/config"
+	view_controller "sertif_validator/app/service/controller/web"
 
 	"github.com/labstack/echo-contrib/session"
 	"github.com/labstack/echo/v4"
@@ -33,8 +34,11 @@ func WebAuthMiddleware(next echo.HandlerFunc) echo.HandlerFunc {
 func webRoutes(srv *echo.Echo) {
 
 	/*------------------------------------------ VIEWS ------------------------------------------*/
-	web := srv.Group(config.BaseURL, WebAuthMiddleware)
+	web := srv.Group(config.BaseURL)
 
 	// web.GET("/login", view_controller.LoginView)
 	web.GET("/", view_controller.DashboardView)
+
+	web.GET("/admin", view_controller.LoginView)
+	web.GET("/admin/dash", view_controller.AdminDashboardView)
 }

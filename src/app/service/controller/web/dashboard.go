@@ -12,3 +12,10 @@ func DashboardView(ctx echo.Context) (err error) {
 	}
 	return ctx.Render(http.StatusOK, "public.dashboard", htmlData)
 }
+
+func AdminDashboardView(ctx echo.Context) (err error) {
+	htmlData := HtmlData{
+		"prefix": base_url,
+	}
+	return ctx.Render(http.StatusOK, "admin.dashboard", htmlData)
+}

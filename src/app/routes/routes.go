@@ -95,9 +95,9 @@ func (srv *VALIDATOR) Start(port string) {
 		if !ok {
 			report = echo.NewHTTPError(http.StatusInternalServerError, err.Error())
 			var respn interface{} = &api_controller.Response{
-				Rc:   "02",
-				Val:  report,
-				Desc: "gagal",
+				ResponseCode:    "02",
+				AdditionalInfo:  report,
+				ResponseMessage: "gagal",
 			}
 
 			c.JSON(report.Code, respn)
@@ -122,11 +122,13 @@ func (srv *VALIDATOR) Start(port string) {
 	view_controller.InitWeb(srv.newEcho)
 	webRoutes(srv.newEcho)
 
-	api := srv.newEcho.Group(config.BaseURL+"/api", ApiAuthMiddleware)
+	api := srv.newEcho.Group(config.BaseURL + "/api")
 
-	// api.POST("/login", api_controller.LoginUser)
-	// api.POST("/logout", api_controller.LogoutUser)
-	// api.GET("/session/check", api_controller.CheckSession)
+	api.GET("/auth/login", api_controller.LoginOIDC)
+	api.GET("/auth/loginCallback", api_controller.LoginCallbackOIDC)
+	api.GET("/auth/logout", api_controller.LogoutOIDC)
+	api.GET("/auth/logoutCallback", api_controller.LogoutCallbackOIDC)
+	api.GET("/auth/validate", api_controller.ValidateOIDC)
 
 	// Certificate
 	api.GET("/certificate/validate/id/:certificate_id", api_controller.GetCertificateByID)

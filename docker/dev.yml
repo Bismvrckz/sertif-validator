@@ -1,0 +1,85 @@
+version: "3.7"
+
+services:
+    go:
+        image: golang:1.22
+        volumes:
+            - ../:/sertif-validator
+            - ./vscode:/root/.vscode-server
+            - ./go-build:/root/.cache/go-build
+            - ./go-mod:/go/pkg/mod
+            - ./bin:/sertif-validator/bin
+            - ./pkg:/sertif-validator/pkg
+            - /usr/share/zoneinfo/Asia/Jakarta:/etc/timezone:ro
+            - /etc/localtime:/etc/localtime:ro
+        working_dir: /sertif-validator
+        command: bash -c "/sertif-validator/docker/initdev.sh"
+        ports:
+            - 9070:9070
+
+    mysql:
+        image: mysql:8
+        environment:
+            MYSQL_ROOT_PASSWORD: 03IZmt7eRMukIHdoZahl
+            MYSQL_DATABASE: sv
+            MYSQL_USER: user1
+            MYSQL_PASSWORD: 03IZmt7eRMukIHdoZahl
+        ports:
+            - 7070:3306
+        volumes:
+            - sv_mysql_data:/var/lib/mysql/
+
+#    keycloak:
+#        image: quay.io/keycloak/keycloak:21.0.2
+#        ports:
+#            - "8080:8080"
+#        environment:
+#            KEYCLOAK_ADMIN: admin
+#            KEYCLOAK_ADMIN_PASSWORD: hSqdQwcX90GGFgpBaT6m
+#            DB_VENDOR: MYSQL
+#            DB_ADDR: mysql-keycloak
+#            DB_DATABASE: keycloak
+#            DB_USER: root
+#            DB_PASSWORD: 03IZmt7eRMukIHdoZahl
+#        depends_on:
+#            - mysql-keycloak
+#            - traefik
+#        command: start-dev
+#        volumes:
+#            - sv_keycloak_data:/opt/jboss/keycloak/standalone/data
+#        labels:
+#            - "traefik.http.routers.keycloak.rule=Host(`keycloak.localhost`)"
+
+#    mysql-keycloak:
+#        image: mysql:8
+#        environment:
+#            MYSQL_ROOT_PASSWORD: 03IZmt7eRMukIHdoZahl
+#            MYSQL_DATABASE: keycloak
+#            MYSQL_USER: user1
+#            MYSQL_PASSWORD: 03IZmt7eRMukIHdoZahl
+#        ports:
+#            - 7071:3306
+#        volumes:
+#            - sv_mysql_keycloak_data:/var/lib/mysql/
+#        depends_on:
+#            - traefik
+
+#    traefik:
+#        image: traefik:v2.5
+#        container_name: traefik
+#        command: --api.insecure=true --providers.docker
+#        ports:
+#            - "80:80"
+#            - "8081:8080"
+#        volumes:
+#            - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+    sv_go:
+        external: true
+    sv_mysql_data:
+        external: true
+    sv_keycloak_data:
+        external: true
+    sv_mysql_keycloak_data:
+        external: true
