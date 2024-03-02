@@ -1,5 +1,0 @@
-./directive.go
-./lex.go
-./object.go
-./reasons.go
-./warning.go

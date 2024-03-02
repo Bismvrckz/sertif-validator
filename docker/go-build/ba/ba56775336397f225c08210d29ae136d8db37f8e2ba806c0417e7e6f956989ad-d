@@ -1,4 +1,0 @@
-./error_locator.go
-./errors.go
-./file_error.go
-./line_number_extractors.go
