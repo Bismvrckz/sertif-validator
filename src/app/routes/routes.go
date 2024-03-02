@@ -131,7 +131,8 @@ func (srv *VALIDATOR) Start(port string) {
 	api.GET("/auth/validate", api_controller.ValidateOIDC)
 
 	// Certificate
-	api.GET("/certificate/validate/id/:certificate_id", api_controller.GetCertificateByID)
+	api.GET("/admin/data/toefl/id/:test_id", api_controller.GetCertificateByID)
+	api.POST("/admin/data/toefl/csv", api_controller.PostCertificateCSV)
 
 	/*------------------------------------------ server start ------------------------------------------*/
 	srv.newEcho.Logger.Fatal(srv.newEcho.Start(port))

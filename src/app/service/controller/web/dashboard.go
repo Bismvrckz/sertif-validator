@@ -15,7 +15,8 @@ func DashboardView(ctx echo.Context) (err error) {
 
 func AdminDashboardView(ctx echo.Context) (err error) {
 	htmlData := HtmlData{
-		"prefix": base_url,
+		"prefix":    base_url,
+		"apiPrefix": base_url + "/api",
 	}
 	return ctx.Render(http.StatusOK, "admin.dashboard", htmlData)
 }
