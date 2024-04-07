@@ -1,6 +1,7 @@
 package api_controller
 
 import (
+	"errors"
 	"net/http"
 	"sertif_validator/app/config"
 	"sertif_validator/app/logging"
@@ -8,9 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"encoding/json"
-
-	oidc "github.com/coreos/go-oidc"
+	"github.com/coreos/go-oidc"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/labstack/echo/v4"
@@ -29,18 +28,16 @@ var (
 	oauth2Config = oauth2.Config{
 		ClientID:     config.IAMClientID,
 		ClientSecret: config.IAMClientSecret,
-		RedirectURL:  config.IAMRedirectURL,
+		RedirectURL:  config.IAMLoginRedirectURL,
 		Scopes:       []string{oidc.ScopeOpenID, "profile", "email"},
 	}
 )
-
-// TODO refactor me
 
 func LoginOIDC(ctx echo.Context) (err error) {
 	loggers := logging.Log
 
 	ctxCore := ctx.Request().Context()
-	provider, err := oidc.NewProvider(ctxCore, config.IAMConfigURL)
+	provider, err := oidc.NewProvider(ctxCore, config.IAMDockerConfigURL)
 	if err != nil {
 		loggers.Error().Stack().Err(err).Msg(err.Error())
 		return err
@@ -55,7 +52,7 @@ func LoginOIDC(ctx echo.Context) (err error) {
 	rawAccessToken := ctx.Request().Header.Get("Authorization")
 
 	if rawAccessToken == "" {
-		return ctx.Redirect(http.StatusFound, oauth2Config.AuthCodeURL(config.IAMState))
+		return ctx.Redirect(http.StatusFound, strings.Replace(oauth2Config.AuthCodeURL(config.IAMState), "keycloak", "localhost", 1))
 	}
 	parts := strings.Split(rawAccessToken, " ")
 
@@ -65,11 +62,9 @@ func LoginOIDC(ctx echo.Context) (err error) {
 
 	var _, errVerifier = verifier.Verify(ctxCore, parts[1])
 	if errVerifier != nil {
-
-		return ctx.Redirect(http.StatusFound, oauth2Config.AuthCodeURL(config.IAMState))
+		return ctx.Redirect(http.StatusFound, strings.Replace(oauth2Config.AuthCodeURL(config.IAMState), "keycloak", "localhost", 1))
 	}
 
-	//TODO il8n
 	var respn interface{} = &Response{
 		ResponseCode:    "00",
 		AdditionalInfo:  "",
@@ -80,50 +75,50 @@ func LoginOIDC(ctx echo.Context) (err error) {
 }
 
 func LoginCallbackOIDC(ctx echo.Context) (err error) {
-	loggers := logging.Log
+	//loggers := logging.Log
 
 	if ctx.Request().URL.Query().Get("state") != config.IAMState {
 		return ctx.HTML(http.StatusBadRequest, "state did not match")
 	}
 
 	ctxCore := ctx.Request().Context()
-	provider, err := oidc.NewProvider(ctxCore, config.IAMConfigURL)
+	provider, err := oidc.NewProvider(ctxCore, config.IAMDockerConfigURL)
 	if err != nil {
-		loggers.Error().Stack().Err(err).Msg("")
+		return err
 	}
 
 	oauth2Config.Endpoint = provider.Endpoint()
 
-	oidcConfig := &oidc.Config{
-		ClientID: config.IAMClientID,
-	}
-	verifier := provider.Verifier(oidcConfig)
-
 	oauth2Token, err := oauth2Config.Exchange(ctxCore, ctx.Request().URL.Query().Get("code"))
 	if err != nil {
-		return ctx.HTML(http.StatusInternalServerError, "Failed to exchange token: "+err.Error())
+		return errors.New("Failed to exchange token: " + err.Error())
 	}
 
 	rawIDToken, ok := oauth2Token.Extra("id_token").(string)
 	if !ok {
-		return ctx.HTML(http.StatusInternalServerError, "No id_token field in oauth2 token.")
+		return errors.New("no id_token field in oauth2 token")
 	}
 
-	idToken, err := verifier.Verify(ctxCore, rawIDToken)
-	if err != nil {
-		return ctx.HTML(http.StatusInternalServerError, "Failed to verify ID Token: "+err.Error())
-	}
-
-	resp := struct {
-		OAuth2Token   *oauth2.Token
-		IDTokenClaims *json.RawMessage // ID Token payload is just JSON.
-	}{
-		oauth2Token,
-		new(json.RawMessage),
-	}
-	if err := idToken.Claims(&resp.IDTokenClaims); err != nil {
-		return ctx.HTML(http.StatusInternalServerError, err.Error())
-	}
+	//oidcConfig := &oidc.Config{
+	//	ClientID: config.IAMClientID,
+	//}
+	//verifier := provider.Verifier(oidcConfig)
+	//idToken, err := verifier.Verify(ctxCore, rawIDToken)
+	//if err != nil {
+	//	fmt.Printf("idToken %v\n", idToken)
+	//	return errors.New("Failed to verify ID Token: " + err.Error())
+	//}
+	//
+	//resp := struct {
+	//	OAuth2Token   *oauth2.Token
+	//	IDTokenClaims *json.RawMessage // ID Token payload is just JSON.
+	//}{
+	//	oauth2Token,
+	//	new(json.RawMessage),
+	//}
+	//if err := idToken.Claims(&resp.IDTokenClaims); err != nil {
+	//	return ctx.HTML(http.StatusInternalServerError, err.Error())
+	//}
 
 	tokenExp := handler.GenerateJwtString(jwt.MapClaims{
 		"tokenExp": oauth2Token.Expiry.Format("2006-01-02T15:04:05.999999-07:00"),
@@ -131,40 +126,39 @@ func LoginCallbackOIDC(ctx echo.Context) (err error) {
 
 	return ctx.HTML(http.StatusOK,
 		`<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="refresh" content="0; url='`+config.IAMRedirect302Url+`'" />
-</head>
-<body>
-<script type="text/javascript">
-function setCookie(name, value, days, path) {
-var expires = "";
-if (days) {
-var date = new Date();
-date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-expires = "; expires=" + date.toUTCString();
-}
+              <html>
+              	<head>
+              		<meta http-equiv="refresh" content="0; url='`+config.IAMLoginRedirect302URL+`'" />
+              	</head>
+              	<body>
+              		<script type="text/javascript">
+              			function setCookie(name, value, days, path) {
+              				var expires = "";
+              				if (days) {
+              					var date = new Date();
+              					date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+              					expires = "; expires=" + date.toUTCString();
+							}
+              				document.cookie = name + "=" + value + expires + "; path=" + path;
+						}
 
-document.cookie = name + "=" + value + expires + "; path=" + path;
-}
-
-setCookie("accessToken", "`+oauth2Token.AccessToken+`", 1, "`+config.BaseURL+`");
-setCookie("refreshToken", "`+oauth2Token.RefreshToken+`", 1, "`+config.BaseURL+`");
-setCookie("expiry", "`+tokenExp+`", 1, "`+config.BaseURL+`");
-setCookie("idToken", '`+rawIDToken+`', 1, "`+config.BaseURL+`");
-</script>
-</body>
-</html>	
-`)
+              			setCookie("accessToken", "`+oauth2Token.AccessToken+`", 1, "`+config.BaseURL+`");
+              			setCookie("refreshToken", "`+oauth2Token.RefreshToken+`", 1, "`+config.BaseURL+`");
+              			setCookie("expiry", "`+tokenExp+`", 1, "`+config.BaseURL+`");
+              			setCookie("idToken", '`+rawIDToken+`', 1, "`+config.BaseURL+`");
+              		</script>
+              	</body>
+              </html>	
+              `)
 }
 
 func LogoutOIDC(ctx echo.Context) (err error) {
 	idToken := ctx.QueryParam("idToken")
 
 	logoutUrl := config.IAMConfigURL + "/protocol/openid-connect/logout"
-	logoutRedirectUrl := config.IAMLogoutRedirectUrl
+	logoutRedirectUrl := config.IAMLogoutRedirectURL
 
-	return ctx.Redirect(http.StatusSeeOther, logoutUrl+"?post_logout_redirect_uri="+logoutRedirectUrl+"&client_id=mav2&id_token_hint="+idToken)
+	return ctx.Redirect(http.StatusSeeOther, logoutUrl+"?post_logout_redirect_uri="+logoutRedirectUrl+"&client_id="+config.IAMClientID+"&id_token_hint="+idToken)
 }
 
 func LogoutCallbackOIDC(ctx echo.Context) (err error) {
@@ -174,13 +168,15 @@ func LogoutCallbackOIDC(ctx echo.Context) (err error) {
 	// middlewares.DeleteCookie(ctx, "expiry")
 
 	return ctx.HTML(http.StatusOK,
-		`<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="refresh" content="0; url='`+config.IAMRedirect302Url+`'" />
-</head>
-<body></body>
-</html>	`)
+		`
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<meta http-equiv="refresh" content="0; url='`+config.AdminLoginURL+`'" />
+				</head>
+				<body></body>
+			</html>	
+			`)
 }
 
 func ValidateOIDC(ctx echo.Context) (err error) {

@@ -1,8 +1,14 @@
 package entity
 
 type (
-	Sertifikat struct {
-		Certificate_id string
-		Nama_pemilik   string
+	ToeflCertificate struct {
+		ID            int
+		TestID        string
+		Name          string
+		StudentNumber string
+		Major         string
+		DateOfTest    string
+		ToeflScore    string
+		InsertDate    string
 	}
 )

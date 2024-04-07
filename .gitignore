@@ -19,7 +19,7 @@
 
 # Go workspace file
 go.work
-docker/go-build/
-docker/go-mod/
 go-build
 go-mod
+pkg
+bin

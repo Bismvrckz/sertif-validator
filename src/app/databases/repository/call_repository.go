@@ -7,7 +7,7 @@ import (
 
 /*================================ CALL REPOSITORY ==============================*/
 
-func AccessRepositoryValidator(db *sql.DB) entity.ValidatorInterface {
+func AccessTkbaiRepository(db *sql.DB) entity.ValidatorInterface {
 	return &validatorRepositoryImpl{
 		ConnectValidator: db,
 	}

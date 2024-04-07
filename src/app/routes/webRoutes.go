@@ -36,9 +36,8 @@ func webRoutes(srv *echo.Echo) {
 	/*------------------------------------------ VIEWS ------------------------------------------*/
 	web := srv.Group(config.BaseURL)
 
-	// web.GET("/login", view_controller.LoginView)
 	web.GET("/", view_controller.DashboardView)
 
-	web.GET("/admin", view_controller.LoginView)
+	web.GET("/admin", view_controller.AdminLoginView)
 	web.GET("/admin/dash", view_controller.AdminDashboardView)
 }

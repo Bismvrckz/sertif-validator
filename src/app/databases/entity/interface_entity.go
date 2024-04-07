@@ -3,10 +3,12 @@ package entity
 import "context"
 
 /*================================ ENTITY / MODELS ==============================*/
-// interface database
+
 type (
 	ValidatorInterface interface {
-		// Sertif Table
-		ViewSertifTableByID(ctx context.Context, certificate_id, ip string) (Sertifikat, error)
+		ViewTkbaiCertByID(ctx context.Context, certificateId, ip string) (ToeflCertificate, error)
+		ViewToeflDataAll(ctx context.Context, start, length, ip string) (toeflCertificate []ToeflCertificate, err error)
+		CreateCertificate(ctx context.Context, certificates []ToeflCertificate, ip string) (rowsAffected int64, err error)
+		CountToeflDataAll(ctx context.Context, ip string) (totalRows int64, err error)
 	}
 )

@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func LoginView(ctx echo.Context) error {
+func AdminLoginView(ctx echo.Context) error {
 	htmlData := HtmlData{
 		"prefix": base_url,
 	}

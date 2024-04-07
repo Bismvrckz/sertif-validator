@@ -1,6 +1,7 @@
 package routes
 
 import (
+	"errors"
 	"net/http"
 	"sertif_validator/app/config"
 	"sertif_validator/app/logging"
@@ -15,7 +16,7 @@ import (
 )
 
 type (
-	VALIDATOR struct {
+	TkbaiApp struct {
 		newEcho *echo.Echo
 	}
 )
@@ -42,20 +43,13 @@ func ApiAuthMiddleware(next echo.HandlerFunc) echo.HandlerFunc {
 	}
 }
 
-func ServiceVALIDATOR() *VALIDATOR {
-	return &VALIDATOR{
+func ServiceTKBAI() *TkbaiApp {
+	return &TkbaiApp{
 		newEcho: echo.New(),
 	}
 }
 
-func (srv *VALIDATOR) Start(port string) {
-	/**=======================================================================================================================
-	*?                                                   CONFIG
-	*=======================================================================================================================**/
-
-	/*------------------------------------------ middleware ------------------------------------------*/
-
-	// logging route
+func (srv *TkbaiApp) Start(port string) {
 	logger := logging.Log
 	srv.newEcho.Use(middleware.RequestLoggerWithConfig(middleware.RequestLoggerConfig{
 		LogURI:       true,
@@ -90,20 +84,18 @@ func (srv *VALIDATOR) Start(port string) {
 		},
 	}))
 
-	srv.newEcho.HTTPErrorHandler = func(err error, c echo.Context) {
-		report, ok := err.(*echo.HTTPError)
-		if !ok {
-			report = echo.NewHTTPError(http.StatusInternalServerError, err.Error())
-			var respn interface{} = &api_controller.Response{
-				ResponseCode:    "02",
-				AdditionalInfo:  report,
-				ResponseMessage: "gagal",
-			}
+	srv.newEcho.HTTPErrorHandler = func(err error, ctx echo.Context) {
+		var report *echo.HTTPError
+		_ = errors.As(err, &report)
 
-			c.JSON(report.Code, respn)
-
-		} else {
-			c.JSON(report.Code, report)
+		report = echo.NewHTTPError(http.StatusInternalServerError, err.Error())
+		err = ctx.JSON(report.Code, api_controller.Response{
+			ResponseCode:    "02",
+			AdditionalInfo:  report,
+			ResponseMessage: "failed",
+		})
+		if err != nil {
+			logger.Error().Err(err).Msg("")
 		}
 	}
 
@@ -130,9 +122,13 @@ func (srv *VALIDATOR) Start(port string) {
 	api.GET("/auth/logoutCallback", api_controller.LogoutCallbackOIDC)
 	api.GET("/auth/validate", api_controller.ValidateOIDC)
 
-	// Certificate
+	// Admin
 	api.GET("/admin/data/toefl/id/:test_id", api_controller.GetCertificateByID)
+	api.GET("/admin/data/toefl/all", api_controller.GetCertificateAll)
 	api.POST("/admin/data/toefl/csv", api_controller.PostCertificateCSV)
+
+	// Certificate
+	api.GET("/certificate/validate/id/:id", api_controller.ValidateCertificateByID)
 
 	/*------------------------------------------ server start ------------------------------------------*/
 	srv.newEcho.Logger.Fatal(srv.newEcho.Start(port))

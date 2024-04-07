@@ -10,7 +10,7 @@ import (
 
 var (
 	base_url           string = utils.GetEnv("BASE_URL", "/validator")
-	web_templates_path string = utils.GetEnv("WEB_TEMPLATES_PATH", "/root/sertif_validator/public/view/*.html")
+	web_templates_path string = utils.GetEnv("WEB_TEMPLATES_PATH", "/root/sertif-validator/public/view/*.html")
 	web_static_url     string = utils.GetEnv("WEB_STATIC_URL", "/static")
 	web_static_path    string = utils.GetEnv("WEB_STATIC_PATH", "/root/sertif_validator/public")
 )
