@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  management-dashboard:
+    image: tkbai-management-dashboard-be:latest
+    working_dir: /tkbai-dashboard
+    command: "./be/tkbai-backend"
+    ports:
+      - 9070:9070
+      - 9071:9071
+
+volumes:
+  tkbai_go:
+    external: true
+  tkbai_mysql_data:
+    external: true
+  tkbai_keycloak_data:
+    external: true
+  tkbai_mysql_keycloak_data:
+    external: true

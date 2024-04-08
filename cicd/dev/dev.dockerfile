@@ -1,10 +1,19 @@
-FROM debian:bookworm-slim
+FROM golang:alpine
 
-RUN adduser --system --group --no-create-home tkbai
+RUN adduser -S tkbai -H
+
+RUN apk update && apk add --no-cache git
+
+COPY . .
+
+RUN cd be/ && go mod tidy
+RUN cd fe/ && go mod tidy
+
+RUN cd be/ && go build tkbai-be.go
+RUN cd fe/ && go build tkbai-fe.go
 
 RUN mkdir -p /tkbai-dashboard/fe \
     && mkdir -p /tkbai-dashboard/be \
-    && apt update \
     && mkdir -p /tkbai-dashboard/fe/public \
     && mkdir -p /tkbai-dashboard/migration \
     && mkdir -p /tkbai-dashboard/fe/log \
@@ -17,7 +26,7 @@ COPY migration /tkbai-dashboard/migration
 COPY fe/.env /tkbai-dashboard/fe/.env
 COPY be/.env /tkbai-dashboard/be/.env
 
-RUN chown -R tkbai:tkbai /tkbai-dashboard && chmod 755 /tkbai-dashboard/fe/tkbai-frontend && chmod 755 /tkbai-dashboard/be/tkbai-backend
+RUN chown -R tkbai /tkbai-dashboard && chmod 755 /tkbai-dashboard/fe/tkbai-frontend && chmod 755 /tkbai-dashboard/be/tkbai-backend
 
 USER tkbai
 

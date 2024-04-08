@@ -1,0 +1,17 @@
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"tkbai-be.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-09T05:12:24+07:00","message":"logging configured"}
+{"level":"error","BE_SERVER_PORT":":9070","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_API_PREFIX":"/api","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_WEB_HOST":"http://localhost:9071","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_BASE_URL":"/tkbai","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_KC_URL":"http://localhost:8080","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_KC_SECRET":"rK4sSxVGdIjnEKnyBFzdymlN62stQ72m","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_KC_ID":"tkbai","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_KC_REALM":"tkbai_dev","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_KC_STATE":"authExt","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_KC_LOGIN_REDIRECT_PATH":"","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_KC_LOGIN_302REDIRECT_PATH":"","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_KC_LOGOUT_REDIRECT_PATH":"","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","BE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-09T05:12:24+07:00","message":"Fallback"}
+{"level":"error","error":"dial tcp: lookup mysql: no such host","FUNC":"TkbaiDbConnection","time":"2024-04-09T05:12:24+07:00"}

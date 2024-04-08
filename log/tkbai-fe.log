@@ -1,0 +1,19 @@
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"tkbai-fe.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-09T05:12:34+07:00","message":"logging configured"}
+{"level":"error","FE_WEB_PORT":":9071","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_BASE_URL":"/tkbai","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_API_PREFIX":"/api","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_WEB_TEMPLATES_PATH":"/root/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_WEB_STATIC_URL":"/static","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_WEB_STATIC_PATH":"/root/tkbai-dashboard/fe/public","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_KC_URL":"http://localhost:8080","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_KC_ID":"tkbai","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_KC_REALM":"tkbai_dev","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_KC_STATE":"authExt","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_KC_LOGIN_REDIRECT_PATH":"","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_KC_LOGIN_302REDIRECT_PATH":"","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_KC_LOGOUT_REDIRECT_PATH":"","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
+{"level":"error","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-09T05:12:34+07:00","message":"Fallback"}
