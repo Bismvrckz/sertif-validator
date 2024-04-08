@@ -2747,3 +2747,412 @@
 {"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T21:49:21+07:00","message":"Env"}
 {"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T21:49:21+07:00","message":"Env"}
 {"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T21:49:21+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:33:55+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:33:55+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:33:55+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:34:04+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/js/pages/public.dashboard.html.js","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:34:05+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:34:05+07:00"}
+{"level":"debug","time":"2024-04-08T22:34:05+07:00","message":"code=404, message=Not Found"}
+{"level":"info","URI":"/tkbai/certificate/23132","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:35:18+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:35:18+07:00"}
+{"level":"debug","time":"2024-04-08T22:35:18+07:00","message":"code=404, message=Not Found"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:35:52+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:35:52+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:35:52+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:36:36+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:36:37+07:00"}
+{"level":"debug","time":"2024-04-08T22:36:37+07:00","message":"code=404, message=Not Found"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:36:51+07:00"}
+{"level":"debug","time":"2024-04-08T22:36:51+07:00","message":"code=404, message=Not Found"}
+{"level":"info","URI":"/tkbai/certificate/23132","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:37:01+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:37:02+07:00"}
+{"level":"debug","time":"2024-04-08T22:37:02+07:00","message":"code=404, message=Not Found"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:39:19+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:39:19+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:39:19+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:39:20+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:39:20+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:39:20+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:39:32+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:39:32+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:39:32+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/certificate/23132","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/plugins/global/plugins.bundle.css","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/css/style.bundle.css","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/media/logos/logo-demo11.svg","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/media/illustrations/sketchy-1/11.png","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/plugins/custom/datatables/datatables.bundle.css","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/plugins/global/plugins.bundle.js","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/js/pages/public.dashboard.html.js","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/js/custom/widgets.js","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/plugins/custom/datatables/datatables.bundle.js","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/js/scripts.bundle.js","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/plugins/global/fonts/@fortawesome/fa-solid-900.woff2","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:39:36+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:39:37+07:00"}
+{"level":"debug","time":"2024-04-08T22:39:37+07:00","message":"code=404, message=Not Found"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:40:34+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:40:34+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:40:34+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/certificate/23132","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:40:36+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:40:37+07:00"}
+{"level":"debug","time":"2024-04-08T22:40:37+07:00","message":"code=404, message=Not Found"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:41:44+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:41:44+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:41:44+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:41:55+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:41:55+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:41:55+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:42:24+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:42:24+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:42:24+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:43:44+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:43:44+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:43:44+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:43:47+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:43:47+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:43:47+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:44:03+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:44:03+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:44:03+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:46:25+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:46:25+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:46:25+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/certificate/23132","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:46:34+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:46:34+07:00"}
+{"level":"debug","time":"2024-04-08T22:46:34+07:00","message":"code=404, message=Not Found"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:46:49+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:46:49+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:46:49+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:53:59+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:53:59+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:53:59+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:54:06+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:54:06+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:54:06+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/certificate/23132","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:54:08+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/js/pages/public.dashboard.html.js","METHOD":"GET","STATUS":304,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:54:08+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:54:09+07:00"}
+{"level":"debug","time":"2024-04-08T22:54:09+07:00","message":"code=404, message=Not Found"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:55:10+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:55:10+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:55:10+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:55:36+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:55:36+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:55:36+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/certificate/23132","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:55:36+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:55:36+07:00"}
+{"level":"debug","time":"2024-04-08T22:55:36+07:00","message":"code=404, message=Not Found"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:56:01+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:56:02+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:56:02+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/certificate/23132","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:56:03+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:56:03+07:00"}
+{"level":"debug","time":"2024-04-08T22:56:03+07:00","message":"code=404, message=Not Found"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"fellobackend.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T22:56:26+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-08T22:56:26+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T22:56:26+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/certificate/23132","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-08T22:56:27+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-08T22:56:28+07:00"}
+{"level":"debug","time":"2024-04-08T22:56:28+07:00","message":"code=404, message=Not Found"}
