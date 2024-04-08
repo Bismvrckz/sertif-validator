@@ -28,7 +28,7 @@ async function checkID() {
 
         const resValidate = await validate.json();
 
-        console.log({resValidate})
+        console.log(resValidate.additionalInfo)
         if (validate.status === 200) {
             Swal.fire({
                 text: "Sertifikat anda valid!",
@@ -40,7 +40,7 @@ async function checkID() {
                 },
             }).then((result) => {
                 if (result.isConfirmed) {
-                    // window.location.href = BASE_URL + "/dashboard";
+                    window.location.href = BASE_URL + `/certificate/${resValidate.additionalInfo.testID}/name/${resValidate.additionalInfo.name}`;
                 }
             });
         } else {

@@ -9,14 +9,14 @@ import (
 )
 
 type ToeflCertificate struct {
-	ID            int
-	TestID        string
-	Name          string
-	StudentNumber string
-	Major         string
-	DateOfTest    string
-	ToeflScore    string
-	InsertDate    string
+	ID            int    `json:"id"`
+	TestID        string `json:"testID"`
+	Name          string `json:"name"`
+	StudentNumber string `json:"studentNumber"`
+	Major         string `json:"major"`
+	DateOfTest    string `json:"dateOfTest"`
+	ToeflScore    string `json:"toeflScore"`
+	InsertDate    string `json:"insertDate"`
 }
 
 func (tkbaiDbImpl *TkbaiDbImplement) ViewToeflDataAll(ctx context.Context, start, length string) (result []ToeflCertificate, err error) {

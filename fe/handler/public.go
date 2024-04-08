@@ -17,11 +17,19 @@ func PublicDashboardView(ctx echo.Context) (err error) {
 
 func PublicCertificateDetail(ctx echo.Context) (err error) {
 	certificateId := ctx.Param("id")
-	fmt.Println(certificateId)
+	certHolder := ctx.Param("certHolder")
+
+	result, err := GetCertificateByID(ctx, certificateId, certHolder)
+	if err != nil {
+		return err
+	}
+
+	fmt.Printf("result:%+v\n", result)
 
 	return ctx.Render(http.StatusOK, "public.certificateDetail", map[string]interface{}{
 		"prefix":    config.BaseURL,
 		"apiHost":   config.APIHost,
 		"apiPrefix": config.ApiPrefix,
+		"certData":  result.AdditionalInfo,
 	})
 }

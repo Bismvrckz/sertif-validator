@@ -42,9 +42,10 @@ func GetAllToeflCertificate(ctx echo.Context) (err error) {
 }
 
 func GetToeflCertificateByID(ctx echo.Context) (err error) {
-	certificateId := ctx.FormValue("id")
+	certificateId := ctx.Param("id")
+	certificateHolder := ctx.Param("certHolder")
 
-	result, err := databases.DbTkbaiInterface.ViewToeflDataByIDAndName(context.Background(), certificateId, "%%")
+	result, err := databases.DbTkbaiInterface.ViewToeflDataByIDAndName(context.Background(), certificateId, certificateHolder)
 	if err != nil {
 		return err
 
@@ -53,7 +54,7 @@ func GetToeflCertificateByID(ctx echo.Context) (err error) {
 	return ctx.JSON(http.StatusOK, models.Response{
 		ResponseCode:    "00",
 		AdditionalInfo:  result,
-		ResponseMessage: "Sukses",
+		ResponseMessage: "Success",
 	})
 }
 

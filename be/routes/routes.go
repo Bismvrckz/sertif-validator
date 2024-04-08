@@ -15,7 +15,7 @@ func BuildRoutes(ein *config.Apps) {
 	api.POST("/entry/validate", handler.ValidateOIDC)
 
 	// Admin
-	api.GET("/admin/data/toefl/id/:id", handler.GetToeflCertificateByID)
+	api.GET("/admin/data/toefl/id/:id/name/:certHolder", handler.GetToeflCertificateByID)
 	api.GET("/admin/data/toefl/all", handler.GetAllToeflCertificate)
 	api.POST("/admin/data/toefl/csv", handler.UploadCSVCertificate)
 
