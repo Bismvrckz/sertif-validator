@@ -4343,3 +4343,17 @@
 {"level":"info","URI":"/tkbai/static/assets/js/pages/public.dashboard.html.js","METHOD":"GET","STATUS":304,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-09T01:48:31+07:00","message":"Request"}
 {"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-09T01:48:31+07:00"}
 {"level":"debug","time":"2024-04-09T01:48:31+07:00","message":"code=404, message=Not Found"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-09T01:50:08+07:00"}
+{"level":"debug","time":"2024-04-09T01:50:08+07:00","message":"code=404, message=Not Found"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-09T01:50:09+07:00"}
+{"level":"debug","time":"2024-04-09T01:50:09+07:00","message":"code=404, message=Not Found"}
+{"level":"info","URI":"/tkbai/","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-09T01:50:12+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/static/assets/js/pages/public.dashboard.html.js","METHOD":"GET","STATUS":304,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-09T01:50:12+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-09T01:50:12+07:00"}
+{"level":"debug","time":"2024-04-09T01:50:12+07:00","message":"code=404, message=Not Found"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-09T01:50:37+07:00"}
+{"level":"info","URI":"/tkbai/certificate/006.M.2023/name/DINI%20FIRDA%20NOVITA%20PUTRI","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-09T01:50:37+07:00","message":"Request"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-09T01:50:37+07:00"}
+{"level":"debug","time":"2024-04-09T01:50:37+07:00","message":"code=404, message=Not Found"}
+{"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-09T01:50:41+07:00"}
+{"level":"debug","time":"2024-04-09T01:50:41+07:00","message":"code=404, message=Not Found"}

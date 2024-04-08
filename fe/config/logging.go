@@ -96,7 +96,7 @@ func logWithConfig() *Logger {
 		EncodeLogsAsJson:      true,
 		FileLoggingEnabled:    true,
 		Directory:             "log",
-		Filename:              "fellobackend.log",
+		Filename:              "tkbai-fe.log",
 		MaxSize:               2,
 	}
 	return Configure(configLog)

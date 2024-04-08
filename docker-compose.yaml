@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  management-dashboard:
+    build:
+      context: .
+      dockerfile: cicd/dev/dev.dockerfile
+    command: bash -c "while true; do sleep 1; done"
