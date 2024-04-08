@@ -7,6 +7,7 @@ import (
 	"tkbai-be/handler"
 	"tkbai-be/routes"
 
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
@@ -21,7 +22,7 @@ func main() {
 
 	// set cors
 	a.Api.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins: []string{"http://localhost:9000", "http://localhost:9001", "http://localhost:9002", "https://dnode01.jatelindo.co.id"},
+		AllowOrigins: []string{config.WebHost, config.APIHost},
 		AllowMethods: []string{echo.GET, echo.HEAD, echo.PATCH, echo.PUT, echo.POST, echo.DELETE},
 	}))
 

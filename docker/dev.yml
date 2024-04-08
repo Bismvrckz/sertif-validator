@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   go:
-    image: golang:1.22
+    image: golang:1.22.2
     volumes:
       - ../:/tkbai-dashboard
       - ./vscode:/root/.vscode-server
@@ -16,6 +16,7 @@ services:
     command: bash -c "/tkbai-dashboard/docker/initdev.sh"
     ports:
       - 9070:9070
+      - 9071:9071
 
   mysql:
     image: mysql:8

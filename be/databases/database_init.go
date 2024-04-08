@@ -13,5 +13,7 @@ func ConnectTkbaiDatabase() (err error) {
 		return err
 	}
 
+	DbTkbaiInterface = &TkbaiDbImplement{ConnectTkbaiDB: cmsDB}
+
 	return nil
 }

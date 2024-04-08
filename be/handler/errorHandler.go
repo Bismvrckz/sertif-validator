@@ -18,7 +18,17 @@ func InitErrHandler(ein *config.Apps) {
 		loggers.Debug().Msg(err.Error())
 
 		var report *echo.HTTPError
-		_ = errors.As(err, &report)
+		ok := errors.As(err, &report)
+
+		if ok {
+			err = ctx.JSON(report.Code, map[string]interface{}{
+				"message": report.Message,
+			})
+			if err != nil {
+				loggers.Error().Err(err).Msg("")
+			}
+			return
+		}
 
 		err = ctx.JSON(http.StatusInternalServerError, map[string]interface{}{
 			"status": err.Error(),

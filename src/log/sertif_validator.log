@@ -10683,3 +10683,22 @@
 {"level":"info","URI":"/tkbai/static/assets/js/pages/public.dashboard.html.js","METHOD":"GET","STATUS":200,"IP":"192.168.247.1","Host":"localhost:9070","RequestID":"","time":"2024-04-07T23:21:06+07:00","message":"Request"}
 {"level":"error","URI":"/favicon.ico","METHOD":"GET","STATUS":404,"IP":"192.168.247.1","Host":"localhost:9070","RequestID":"","error":"code=404, message=Not Found","time":"2024-04-07T23:21:13+07:00"}
 {"level":"info","URI":"/tkbai/static/assets/plugins/global/fonts/@fortawesome/fa-solid-900.woff2","METHOD":"GET","STATUS":200,"IP":"192.168.247.1","Host":"localhost:9070","RequestID":"","time":"2024-04-07T23:21:24+07:00","message":"Request"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"sertif_validator.log","maxSizeMB":5,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-08T12:24:09+07:00","message":"logging configured"}
+{"level":"debug","APP_HOST":"http://localhost:9070","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","API_PREFIX":"/api","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","BASE_URL":"/tkbai","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","KC_URL":"http://localhost:8080","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","KC_ID":"tkbai","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","KC_REALM":"tkbai_dev","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","KC_STATE":"authExt","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","DB_SERTIF_VALIDATOR_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","BASE_URL":"/tkbai","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","WEB_TEMPLATES_PATH":"/sertif-validator/src/public/view/*.html","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","WEB_STATIC_URL":"/static","time":"2024-04-08T12:24:09+07:00","message":"Env"}
+{"level":"debug","WEB_STATIC_PATH":"/sertif-validator/src/public","time":"2024-04-08T12:24:09+07:00","message":"Env"}
