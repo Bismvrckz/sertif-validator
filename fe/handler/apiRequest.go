@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"github.com/labstack/echo/v4"
 	"net/http"
+	"strings"
 	"tkbai-fe/config"
 	"tkbai-fe/models"
 )
@@ -50,6 +51,8 @@ func GetCertificateByID(ctx echo.Context, certificateID, certificateHolder strin
 		loggers.Err(err).Msg("Error closing body")
 		return result, err
 	}
+
+	result.AdditionalInfo.DateOfTest = strings.Split(result.AdditionalInfo.DateOfTest, " ")[0]
 
 	return result, err
 }

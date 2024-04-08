@@ -396,3 +396,11 @@
 {"level":"info","URI":"/tkbai/api/certificate/validate/id/006.M.2023/name/DINI%20FIRDA%20NOVITA%20PUTRI","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9070","RequestID":"","time":"2024-04-09T01:43:28+07:00","message":"Request"}
 {"level":"trace","FUNC":"ViewToeflDataByIDAndName","time":"2024-04-09T01:43:30+07:00","message":"SUCCESS"}
 {"level":"info","URI":"/tkbai/api/admin/data/toefl/id/006.M.2023/name/DINI%20FIRDA%20NOVITA%20PUTRI","METHOD":"GET","STATUS":200,"IP":"127.0.0.1","HOST":"localhost:9070","RequestID":"","time":"2024-04-09T01:43:30+07:00","message":"Request"}
+{"level":"trace","FUNC":"ViewToeflDataByIDAndName","time":"2024-04-09T01:44:50+07:00","message":"SUCCESS"}
+{"level":"info","URI":"/tkbai/api/certificate/validate/id/006.M.2023/name/DINI%20FIRDA%20NOVITA%20PUTRI","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9070","RequestID":"","time":"2024-04-09T01:44:50+07:00","message":"Request"}
+{"level":"trace","FUNC":"ViewToeflDataByIDAndName","time":"2024-04-09T01:45:04+07:00","message":"SUCCESS"}
+{"level":"info","URI":"/tkbai/api/admin/data/toefl/id/006.M.2023/name/DINI%20FIRDA%20NOVITA%20PUTRI","METHOD":"GET","STATUS":200,"IP":"127.0.0.1","HOST":"localhost:9070","RequestID":"","time":"2024-04-09T01:45:04+07:00","message":"Request"}
+{"level":"trace","FUNC":"ViewToeflDataByIDAndName","time":"2024-04-09T01:46:45+07:00","message":"SUCCESS"}
+{"level":"info","URI":"/tkbai/api/admin/data/toefl/id/006.M.2023/name/DINI%20FIRDA%20NOVITA%20PUTRI","METHOD":"GET","STATUS":200,"IP":"127.0.0.1","HOST":"localhost:9070","RequestID":"","time":"2024-04-09T01:46:45+07:00","message":"Request"}
+{"level":"trace","FUNC":"ViewToeflDataByIDAndName","time":"2024-04-09T01:48:31+07:00","message":"SUCCESS"}
+{"level":"info","URI":"/tkbai/api/admin/data/toefl/id/006.M.2023/name/DINI%20FIRDA%20NOVITA%20PUTRI","METHOD":"GET","STATUS":200,"IP":"127.0.0.1","HOST":"localhost:9070","RequestID":"","time":"2024-04-09T01:48:31+07:00","message":"Request"}
