@@ -1,0 +1,349 @@
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"tkbai-fe.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-09T16:01:36+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-09T16:01:36+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-09T16:01:36+07:00","message":"Env"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"tkbai-fe.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-10T21:02:22+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-10T21:02:22+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-10T21:02:22+07:00","message":"Env"}
+{"level":"info","URI":"/tkbai/login/admin","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:12:51+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:12:57+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:12:57+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:12:57+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:12:57+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:12:57+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:12:57+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:12:57+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:12:57+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:12:57+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:12:57+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:12:57+07:00"}
+{"level":"debug","time":"2024-04-10T21:12:57+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:12:57+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:13:12+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:13:12+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:13:12+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:13:12+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:13:12+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:13:12+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:13:12+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:13:12+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:13:12+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:13:12+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:13:12+07:00"}
+{"level":"debug","time":"2024-04-10T21:13:12+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:13:12+07:00","message":"Request"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"tkbai-fe.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-10T21:14:09+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-10T21:14:09+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-10T21:14:09+07:00","message":"Env"}
+{"level":"debug","time":"2024-04-10T21:14:10+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:14:10+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:14:10+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:14:10+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:14:10+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:14:10+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:14:10+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:14:10+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:14:10+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:14:10+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:14:10+07:00"}
+{"level":"debug","time":"2024-04-10T21:14:10+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:14:10+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:15:55+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:15:55+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:15:55+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:15:55+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:15:55+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:15:55+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:15:55+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:15:55+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:15:55+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:15:55+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:15:55+07:00"}
+{"level":"debug","time":"2024-04-10T21:15:55+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:15:55+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:17:41+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:17:41+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:17:41+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:17:41+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:17:41+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:17:41+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:17:41+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:17:41+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:17:41+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:17:41+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:17:41+07:00"}
+{"level":"debug","time":"2024-04-10T21:17:41+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:17:41+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:19:02+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:19:02+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:19:02+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:19:02+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:19:02+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:19:02+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:19:02+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:19:02+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:19:02+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:19:03+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token refreshed using refresh token.","time":"2024-04-10T21:19:03+07:00"}
+{"level":"debug","time":"2024-04-10T21:19:03+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:19:03+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:20:38+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:20:38+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:20:38+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:20:38+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:20:38+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:20:38+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:20:38+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:20:38+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:20:38+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:20:38+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:20:38+07:00"}
+{"level":"debug","time":"2024-04-10T21:20:38+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:20:38+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:22:24+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:22:24+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:22:24+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:22:24+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:22:24+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:22:24+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:22:24+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:22:24+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:22:24+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:22:24+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:22:24+07:00"}
+{"level":"debug","time":"2024-04-10T21:22:24+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:22:24+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:23:26+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:23:26+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:23:26+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:23:26+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:23:26+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:23:26+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:23:26+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:23:26+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:23:26+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:23:26+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:23:26+07:00"}
+{"level":"debug","time":"2024-04-10T21:23:26+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:23:26+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:24:09+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:24:09+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:24:09+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:24:09+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:24:09+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:24:09+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:24:09+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:24:09+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:24:09+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:24:09+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token refreshed using refresh token.","time":"2024-04-10T21:24:09+07:00"}
+{"level":"debug","time":"2024-04-10T21:24:09+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:24:09+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:24:56+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:24:56+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:24:56+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:24:56+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:24:56+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:24:56+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:24:56+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:24:56+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:24:56+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:24:56+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:24:56+07:00"}
+{"level":"debug","time":"2024-04-10T21:24:56+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:24:56+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:26:00+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:26:00+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:26:00+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:26:00+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:26:00+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:26:00+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:26:00+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:26:00+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:26:00+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:26:00+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:26:00+07:00"}
+{"level":"debug","time":"2024-04-10T21:26:00+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:26:00+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:28:23+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:28:23+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:28:23+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:28:23+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:28:23+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:28:23+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:28:23+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:28:23+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:28:23+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:28:23+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:28:23+07:00"}
+{"level":"debug","time":"2024-04-10T21:28:23+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:28:23+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:29:14+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:29:14+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:29:14+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:29:14+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:29:14+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:29:14+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:29:14+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:29:14+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:29:14+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:29:14+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token refreshed using refresh token.","time":"2024-04-10T21:29:14+07:00"}
+{"level":"debug","time":"2024-04-10T21:29:14+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:29:14+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:30:46+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:30:46+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:30:46+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:30:46+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:30:46+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:30:46+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:30:46+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:30:46+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:30:46+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:30:46+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-10T21:30:46+07:00"}
+{"level":"debug","time":"2024-04-10T21:30:46+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:30:46+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-10T21:35:03+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-10T21:35:03+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-10T21:35:03+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-10T21:35:03+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-10T21:35:03+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-10T21:35:03+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-10T21:35:03+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-10T21:35:03+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-10T21:35:03+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-10T21:35:04+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token refreshed using refresh token.","time":"2024-04-10T21:35:04+07:00"}
+{"level":"debug","time":"2024-04-10T21:35:04+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-10T21:35:04+07:00","message":"Request"}
+{"level":"info","fileLogging":true,"jsonLogOutput":true,"logDirectory":"log","fileName":"tkbai-fe.log","maxSizeMB":2,"maxBackups":0,"maxAgeInDays":0,"time":"2024-04-11T17:44:14+07:00","message":"logging configured"}
+{"level":"debug","FE_WEB_PORT":":9071","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"error","FE_API_HOST":"http://localhost:9070","time":"2024-04-11T17:44:14+07:00","message":"Fallback"}
+{"level":"debug","FE_BASE_URL":"/tkbai","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_API_PREFIX":"/api","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_WEB_TEMPLATES_PATH":"/tkbai-dashboard/fe/public/view/*.html","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_URL":"/static","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_WEB_STATIC_PATH":"/tkbai-dashboard/fe/public","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_SV_JWT_KEY":"LmPZJbddZ9uXW4JE7g6N9R8ZdmDRv5vYihZJRBcOz7U=","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_KC_URL":"http://localhost:8080","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_KC_DOCKER_URL":"http://keycloak:8080","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_KC_SECRET":"mGDmTC5F0RrteSbmlpndSOv1JbKFKiFG","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_KC_ID":"tkbai","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_KC_REALM":"tkbai_dev","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_KC_STATE":"authExt","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_REDIRECT_PATH":"/api/auth/loginCallback","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGIN_302REDIRECT_PATH":"/admin/dash","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_KC_LOGOUT_REDIRECT_PATH":"/api/auth/logoutCallback","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","FE_TKBAI_DB_URL":"root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/tkbai","time":"2024-04-11T17:44:14+07:00","message":"Env"}
+{"level":"debug","time":"2024-04-11T17:44:19+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-11T17:44:19+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-11T17:44:19+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-11T17:44:19+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-11T17:44:19+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-11T17:44:19+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-11T17:44:19+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-11T17:44:19+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-11T17:44:19+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"403 Forbidden","time":"2024-04-11T17:44:20+07:00"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":303,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-11T17:44:20+07:00","message":"Request"}
+{"level":"info","URI":"/tkbai/login/admin","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-11T17:44:20+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-11T17:47:50+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-11T17:47:50+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-11T17:47:50+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-11T17:47:50+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-11T17:47:50+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-11T17:47:50+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-11T17:47:50+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-11T17:47:50+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-11T17:47:50+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-11T17:47:50+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-11T17:47:50+07:00"}
+{"level":"debug","time":"2024-04-11T17:47:50+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-11T17:47:50+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-11T17:48:12+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-11T17:48:12+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-11T17:48:12+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-11T17:48:12+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-11T17:48:12+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-11T17:48:12+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-11T17:48:12+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-11T17:48:12+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-11T17:48:12+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-11T17:48:12+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-11T17:48:12+07:00"}
+{"level":"debug","time":"2024-04-11T17:48:12+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-11T17:48:12+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-11T17:50:05+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-11T17:50:05+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-11T17:50:05+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-11T17:50:05+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-11T17:50:05+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-11T17:50:05+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-11T17:50:05+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-11T17:50:05+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-11T17:50:05+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-11T17:50:05+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-11T17:50:05+07:00"}
+{"level":"debug","time":"2024-04-11T17:50:05+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-11T17:50:05+07:00","message":"Request"}
+{"level":"debug","time":"2024-04-11T17:50:26+07:00","message":"==========================> Start\t\t| GetCookieMiddleware"}
+{"level":"debug","config.WebPrefix":"/tkbai","time":"2024-04-11T17:50:26+07:00","message":"PATH"}
+{"level":"debug","ctx.Path()":"/tkbai/admin/dash","time":"2024-04-11T17:50:26+07:00","message":"PATH"}
+{"level":"debug","accessToken":true,"time":"2024-04-11T17:50:26+07:00","message":"COOKIE"}
+{"level":"debug","refreshToken":true,"time":"2024-04-11T17:50:26+07:00","message":"COOKIE"}
+{"level":"debug","idToken":true,"time":"2024-04-11T17:50:26+07:00","message":"COOKIE"}
+{"level":"debug","expiry":true,"time":"2024-04-11T17:50:26+07:00","message":"COOKIE"}
+{"level":"debug","time":"2024-04-11T17:50:26+07:00","message":"==========================> Done\t\t| GetCookieMiddleware"}
+{"level":"debug","time":"2024-04-11T17:50:26+07:00","message":"==========================> Start\t\t| ValidateTokenMiddleware"}
+{"level":"debug","Response Status":"200 OK","time":"2024-04-11T17:50:26+07:00"}
+{"level":"debug","AdditionalInfo.Message":"Token is still valid.","time":"2024-04-11T17:50:26+07:00"}
+{"level":"debug","time":"2024-04-11T17:50:26+07:00","message":"==========================> Done\t\t| ValidateTokenMiddleware"}
+{"level":"info","URI":"/tkbai/admin/dash","METHOD":"GET","STATUS":200,"IP":"192.168.167.1","HOST":"localhost:9071","RequestID":"","time":"2024-04-11T17:50:26+07:00","message":"Request"}

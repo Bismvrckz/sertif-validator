@@ -1,5 +1,20 @@
-# sertif-validator
-sertif-validator
+# tkbai-management-dashboard
+
+tkbai-management-dashboard
+
+### Docker build
+
+## FE
+
+```
+ docker build . -f dockerfile.fe -t tkbai-fe:latest
+```
+
+## BE
+
+```
+ docker build . -f dockerfile.be -t tkbai-be:latest
+```
 
 ### Migrate DB Up
 
@@ -17,3 +32,4 @@ migrate -database "mysql://root:03IZmt7eRMukIHdoZahl@tcp(mysql:3306)/sv" -path m
 
 ```
 migrate create -ext sql -dir {directory_path} -seq {migration_name}
+```

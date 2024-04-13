@@ -1,11 +1,16 @@
 package handler
 
 import (
+	"cloud.google.com/go/firestore"
 	"context"
 	"encoding/csv"
+	"fmt"
 	"github.com/labstack/echo/v4"
+	"golang.org/x/oauth2/google"
+	"google.golang.org/api/option"
 	"net/http"
 	"strings"
+	"tkbai-be/config"
 	"tkbai-be/databases"
 	"tkbai-be/models"
 )
@@ -79,27 +84,57 @@ func UploadCSVCertificate(ctx echo.Context) (err error) {
 
 	csvRecords, err := csvReader.ReadAll()
 
-	var totalRowsAffected int64
+	//var totalRowsAffected int64
 
-	for i, csvRecord := range csvRecords {
-		if i == 0 {
-			continue
-		}
-
-		rowsAffected, err := databases.DbTkbaiInterface.CreateToeflCertificate(context.Background(), databases.ToeflCertificate{
-			TestID:        csvRecord[0],
-			Name:          csvRecord[1],
-			StudentNumber: csvRecord[2],
-			Major:         csvRecord[3],
-			DateOfTest:    csvRecord[4],
-			ToeflScore:    csvRecord[5],
-		})
-		if err != nil {
-			return err
-		}
-
-		totalRowsAffected = totalRowsAffected + rowsAffected
+	ctxbg := context.Background()
+	opt := option.WithCredentials(&google.Credentials{
+		ProjectID:              "tkbai-management-dashboard",
+		TokenSource:            nil,
+		JSON:                   nil,
+		UniverseDomainProvider: nil,
+	})
+	client, err := firestore.NewClient(ctxbg, "tkbai-management-dashboard", opt)
+	if err != nil {
+		config.LogErr(err, "firestore error")
+		return echo.ErrInternalServerError
 	}
+	wr, err := client.Doc("tkbai").Create(ctxbg, map[string]interface{}{
+		"TestID":        csvRecords[0][0],
+		"Name":          csvRecords[0][1],
+		"StudentNumber": csvRecords[0][2],
+		"Major":         csvRecords[0][3],
+		"DateOfTest":    csvRecords[0][4],
+		"ToeflScore":    csvRecords[0][5],
+	})
+	if err != nil {
+		config.LogErr(err, "firestore Doc Create error")
+		return echo.ErrInternalServerError
+	}
+	fmt.Println(wr.UpdateTime)
+	err = client.Close()
+	if err != nil {
+		config.LogErr(err, "firestore close error")
+	}
+
+	//for i, csvRecord := range csvRecords {
+	//	if i == 0 {
+	//		continue
+	//	}
+
+	//rowsAffected, err := databases.DbTkbaiInterface.CreateToeflCertificate(context.Background(), databases.ToeflCertificate{
+	//	TestID:        csvRecord[0],
+	//	Name:          csvRecord[1],
+	//	StudentNumber: csvRecord[2],
+	//	Major:         csvRecord[3],
+	//	DateOfTest:    csvRecord[4],
+	//	ToeflScore:    csvRecord[5],
+	//})
+	//if err != nil {
+	//	return err
+	//}
+	//
+	//totalRowsAffected = totalRowsAffected + rowsAffected
+	//}
 
 	return ctx.JSON(http.StatusOK, "success")
 }

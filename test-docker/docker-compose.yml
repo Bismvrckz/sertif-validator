@@ -1,13 +1,67 @@
 version: "3.7"
 
 services:
-  management-dashboard:
-    image: tkbai-management-dashboard-be:latest
-    working_dir: /tkbai-dashboard
-    command: "./be/tkbai-backend"
+  tkbai-fe:
+    image: tkbai-fe:latest
+    working_dir: /tkbai-dashboard/fe
+    command: "./tkbai-fe"
+    ports:
+      - 9071:9071
+    depends_on:
+      - mysql
+
+  tkbai-be:
+    image: tkbai-be:latest
+    working_dir: /tkbai-dashboard/be
+    command: "./tkbai-be"
     ports:
       - 9070:9070
-      - 9071:9071
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: 03IZmt7eRMukIHdoZahl
+      MYSQL_DATABASE: tkbai
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: 03IZmt7eRMukIHdoZahl
+    ports:
+      - 7070:3306
+    volumes:
+      - tkbai_mysql_data:/var/lib/mysql/
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:21.0.2
+    ports:
+      - "8080:8080"
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: hSqdQwcX90GGFgpBaT6m
+      DB_VENDOR: MYSQL
+      DB_ADDR: mysql-keycloak
+      DB_DATABASE: keycloak
+      DB_USER: root
+      DB_PASSWORD: 03IZmt7eRMukIHdoZahl
+    depends_on:
+      - mysql-keycloak
+    command: start-dev
+    volumes:
+      - tkbai_keycloak_data:/opt/jboss/keycloak/standalone/data
+    labels:
+      - "traefik.http.routers.keycloak.rule=Host(`keycloak.localhost`)"
+
+  mysql-keycloak:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: 03IZmt7eRMukIHdoZahl
+      MYSQL_DATABASE: keycloak
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: 03IZmt7eRMukIHdoZahl
+    ports:
+      - 7071:3306
+    volumes:
+      - tkbai_mysql_keycloak_data:/var/lib/mysql/
 
 volumes:
   tkbai_go:

@@ -5,4 +5,4 @@ docker volume create tkbai_mysql_data
 docker volume create tkbai_go
 
 
-docker compose $1 $2 $3 --remove-orphans
+docker compose -f dev.yml $1 $2 $3 --remove-orphans
