@@ -1,13 +1,14 @@
 package databases
 
-import "context"
-
 type (
 	TkbaiInterface interface {
-		ViewToeflDataAll(ctx context.Context, start, length string) (result []ToeflCertificate, err error)
-		CountToeflDataAll(ctx context.Context) (result int64, err error)
-		ViewToeflDataByIDAndName(ctx context.Context, certificateId, certificateHolder string) (result ToeflCertificate, err error)
-		CreateCertificateBulk(ctx context.Context, certificates []ToeflCertificate) (rowsAffected int64, err error)
-		CreateToeflCertificate(ctx context.Context, certificate ToeflCertificate) (rowsAffected int64, err error)
+		ViewToeflDataAll(start, length string) (result []ToeflCertificate, err error)
+		ViewToeflDataBulk() (result []ToeflCertificate, err error)
+		CountToeflDataAll() (result int64, err error)
+		ViewToeflDataByIDAndName(certificateId, certificateHolder string) (result ToeflCertificate, err error)
+		CreateCertificateBulk(certificates []ToeflCertificate) (rowsAffected int64, err error)
+		CreateToeflCertificate(certificate ToeflCertificate) (rowsAffected int64, err error)
+
+		GetUserByEmail(email string) (user TkbaiUser, err error)
 	}
 )

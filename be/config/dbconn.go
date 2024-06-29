@@ -1,7 +1,7 @@
 package config
 
 import (
-	"database/sql"
+	"github.com/jmoiron/sqlx"
 	"time"
 )
 
@@ -10,9 +10,9 @@ var (
 	dbMaxCons     = 100
 )
 
-func TkbaiDbConnection() (db *sql.DB, err error) {
+func TkbaiDbConnection() (db *sqlx.DB, err error) {
 	funcName := "TkbaiDbConnection"
-	db, err = sql.Open("mysql", TkbaiDB)
+	db, err = sqlx.Open("sqlite3", "db/sqlite/tkbai.db")
 	if err != nil {
 		Log.Err(err).Str("FUNC", funcName).Msg("")
 		return db, err

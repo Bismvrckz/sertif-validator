@@ -1,7 +1,7 @@
 package databases
 
 import (
-	"context"
+	"database/sql"
 	"errors"
 	"fmt"
 	"github.com/labstack/echo/v4"
@@ -9,20 +9,20 @@ import (
 )
 
 type ToeflCertificate struct {
-	ID            int    `json:"id"`
-	TestID        string `json:"testID"`
-	Name          string `json:"name"`
-	StudentNumber string `json:"studentNumber"`
-	Major         string `json:"major"`
-	DateOfTest    string `json:"dateOfTest"`
-	ToeflScore    string `json:"toeflScore"`
-	InsertDate    string `json:"insertDate"`
+	ID            sql.NullInt64  `json:"id"`
+	TestID        sql.NullString `json:"testID"`
+	Name          sql.NullString `json:"name"`
+	StudentNumber sql.NullString `json:"studentNumber"`
+	Major         sql.NullString `json:"major"`
+	DateOfTest    sql.NullString `json:"dateOfTest"`
+	ToeflScore    sql.NullString `json:"toeflScore"`
+	InsertDate    sql.NullString `json:"insertDate"`
 }
 
-func (tkbaiDbImpl *TkbaiDbImplement) ViewToeflDataAll(ctx context.Context, start, length string) (result []ToeflCertificate, err error) {
+func (tkbaiDbImpl *TkbaiDbImplement) ViewToeflDataAll(start, length string) (result []ToeflCertificate, err error) {
 	funcName := "ViewToeflDataAll"
 	query := "SELECT * FROM tkbai_data LIMIT ? OFFSET ?"
-	rows, err := tkbaiDbImpl.ConnectTkbaiDB.QueryContext(ctx, query, length, start)
+	rows, err := tkbaiDbImpl.ConnectTkbaiDB.Query(query, length, start)
 	if err != nil {
 		config.LogErr(err, "Query Error")
 		return result, err
@@ -57,10 +57,20 @@ func (tkbaiDbImpl *TkbaiDbImplement) ViewToeflDataAll(ctx context.Context, start
 	return result, err
 }
 
-func (tkbaiDbImpl *TkbaiDbImplement) CountToeflDataAll(ctx context.Context) (result int64, err error) {
+func (tkbaiDbImpl *TkbaiDbImplement) ViewToeflDataBulk() (result []ToeflCertificate, err error) {
+	err = tkbaiDbImpl.ConnectTkbaiDB.Get(&result, "SELECT * FROM tkbai_data")
+	if err != nil {
+		config.LogErr(err, "Query Error")
+		return result, err
+	}
+
+	return result, err
+}
+
+func (tkbaiDbImpl *TkbaiDbImplement) CountToeflDataAll() (result int64, err error) {
 	funcName := "CountToeflDataAll"
 	query := "SELECT COUNT(*) AS total_rows FROM tkbai_data"
-	rows, err := tkbaiDbImpl.ConnectTkbaiDB.QueryContext(ctx, query)
+	rows, err := tkbaiDbImpl.ConnectTkbaiDB.Query(query)
 	if err != nil {
 		config.LogErr(err, "Query Error")
 		return result, err
@@ -87,10 +97,10 @@ func (tkbaiDbImpl *TkbaiDbImplement) CountToeflDataAll(ctx context.Context) (res
 	return result, err
 }
 
-func (tkbaiDbImpl *TkbaiDbImplement) ViewToeflDataByIDAndName(ctx context.Context, certificateId, certificateHolder string) (result ToeflCertificate, err error) {
+func (tkbaiDbImpl *TkbaiDbImplement) ViewToeflDataByIDAndName(certificateId, certificateHolder string) (result ToeflCertificate, err error) {
 	funcName := "ViewToeflDataByIDAndName"
 	query := `SELECT * FROM tkbai_data WHERE test_id = ? AND name = ?`
-	rows, err := tkbaiDbImpl.ConnectTkbaiDB.QueryContext(ctx, query, certificateId, certificateHolder)
+	rows, err := tkbaiDbImpl.ConnectTkbaiDB.Query(query, certificateId, certificateHolder)
 	if err != nil {
 		config.LogErr(err, "Query Error")
 		return result, err
@@ -123,7 +133,7 @@ func (tkbaiDbImpl *TkbaiDbImplement) ViewToeflDataByIDAndName(ctx context.Contex
 	return result, err
 }
 
-func (tkbaiDbImpl *TkbaiDbImplement) CreateCertificateBulk(ctx context.Context, certificates []ToeflCertificate) (rowsAffected int64, err error) {
+func (tkbaiDbImpl *TkbaiDbImplement) CreateCertificateBulk(certificates []ToeflCertificate) (rowsAffected int64, err error) {
 	var args []any
 	var parameterString string
 	for _, each := range certificates {
@@ -137,7 +147,7 @@ func (tkbaiDbImpl *TkbaiDbImplement) CreateCertificateBulk(ctx context.Context, 
 
 	funcName := "CreateCertificateBulk"
 	query := "INSERT INTO tkbai_data (test_id, name, student_number, major, date_of_test, toefl_score) VALUES " + parameterString
-	rows, err := tkbaiDbImpl.ConnectTkbaiDB.ExecContext(ctx, query, args...)
+	rows, err := tkbaiDbImpl.ConnectTkbaiDB.Exec(query, args...)
 	if err != nil {
 		config.LogErr(err, "Query Error")
 		return rowsAffected, err
@@ -159,10 +169,10 @@ func (tkbaiDbImpl *TkbaiDbImplement) CreateCertificateBulk(ctx context.Context, 
 	return rowsAffected, err
 }
 
-func (tkbaiDbImpl *TkbaiDbImplement) CreateToeflCertificate(ctx context.Context, certificate ToeflCertificate) (rowsAffected int64, err error) {
+func (tkbaiDbImpl *TkbaiDbImplement) CreateToeflCertificate(certificate ToeflCertificate) (rowsAffected int64, err error) {
 	funcName := "CreateToeflCertificate"
 	query := "INSERT INTO tkbai_data (test_id, name, student_number, major, date_of_test, toefl_score) VALUES (?,?,?,?,STR_TO_DATE(?, '%d-%b-%y'),?)"
-	rows, err := tkbaiDbImpl.ConnectTkbaiDB.ExecContext(ctx, query, certificate.TestID, certificate.Name, certificate.StudentNumber, certificate.Major, certificate.DateOfTest, certificate.ToeflScore)
+	rows, err := tkbaiDbImpl.ConnectTkbaiDB.Exec(query, certificate.TestID, certificate.Name, certificate.StudentNumber, certificate.Major, certificate.DateOfTest, certificate.ToeflScore)
 	if err != nil {
 		config.LogErr(err, "Query Error")
 		return rowsAffected, err

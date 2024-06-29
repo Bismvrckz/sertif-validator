@@ -127,10 +127,10 @@ func LoginCallbackOIDC(ctx echo.Context) (err error) {
               				document.cookie = name + "=" + value + expires + "; path=" + path;
 						}
 
-              			setCookie("accessToken", "`+oauth2Token.AccessToken+`", 1, "`+config.BaseURL+`");
-              			setCookie("refreshToken", "`+oauth2Token.RefreshToken+`", 1, "`+config.BaseURL+`");
-              			setCookie("expiry", "`+tokenExp+`", 1, "`+config.BaseURL+`");
-              			setCookie("idToken", '`+rawIDToken+`', 1, "`+config.BaseURL+`");
+              			setCookie("accessToken", "`+oauth2Token.AccessToken+`", 1, "`+config.AppPrefix+`");
+              			setCookie("refreshToken", "`+oauth2Token.RefreshToken+`", 1, "`+config.AppPrefix+`");
+              			setCookie("expiry", "`+tokenExp+`", 1, "`+config.AppPrefix+`");
+              			setCookie("idToken", '`+rawIDToken+`', 1, "`+config.AppPrefix+`");
               		</script>
               	</body>
               </html>	

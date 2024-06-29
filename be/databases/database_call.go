@@ -1,12 +1,12 @@
 package databases
 
 import (
-	"database/sql"
+	"github.com/jmoiron/sqlx"
 )
 
 type (
 	TkbaiDbImplement struct {
-		ConnectTkbaiDB *sql.DB
+		ConnectTkbaiDB *sqlx.DB
 		Err            error
 	}
 )

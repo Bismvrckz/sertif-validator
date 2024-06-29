@@ -5,5 +5,5 @@ import (
 )
 
 type Apps struct {
-	Api *echo.Echo
+	Tkbai *echo.Echo
 }

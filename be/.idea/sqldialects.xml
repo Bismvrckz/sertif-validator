@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/migration/20240301180507_create_table_tkbai.down.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/migration/20240301180507_create_table_tkbai.up.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/migration/20240629073411_create_table_tkbai_user.down.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/migration/20240629073411_create_table_tkbai_user.up.sql" dialect="SQLite" />
+  </component>
+</project>

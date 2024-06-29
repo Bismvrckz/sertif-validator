@@ -14,7 +14,7 @@ func InitErrHandler(ein *config.Apps) {
 	//var code int
 	//var response models.Status
 
-	ein.Api.HTTPErrorHandler = func(err error, ctx echo.Context) {
+	ein.Tkbai.HTTPErrorHandler = func(err error, ctx echo.Context) {
 		loggers.Debug().Msg(err.Error())
 
 		var report *echo.HTTPError
