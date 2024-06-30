@@ -1,8 +1,0 @@
-version: "3"
-
-services:
-  management-dashboard-be:
-    build:
-      context: .
-      dockerfile: cicd/dev/dev.dockerfile
-    command: bash -c "./be/tkbai-backend"
