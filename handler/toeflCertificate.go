@@ -1,12 +1,14 @@
 package handler
 
 import (
+	"database/sql"
 	"encoding/csv"
-	"github.com/labstack/echo/v4"
 	"net/http"
 	"strings"
 	"tkbai-be/databases"
 	"tkbai-be/models"
+
+	"github.com/labstack/echo/v4"
 )
 
 func GetAllToeflCertificate(ctx echo.Context) (err error) {
@@ -113,12 +115,12 @@ func UploadCSVCertificate(ctx echo.Context) (err error) {
 		}
 
 		_, err := databases.DbTkbaiInterface.CreateToeflCertificate(databases.ToeflCertificate{
-			TestID:        csvRecord[0],
-			Name:          csvRecord[1],
-			StudentNumber: csvRecord[2],
-			Major:         csvRecord[3],
-			DateOfTest:    csvRecord[4],
-			ToeflScore:    csvRecord[5],
+			TestID:        sql.NullString{String: csvRecord[0], Valid: true},
+			Name:          sql.NullString{String: csvRecord[1], Valid: true},
+			StudentNumber: sql.NullString{String: csvRecord[2], Valid: true},
+			Major:         sql.NullString{String: csvRecord[3], Valid: true},
+			DateOfTest:    sql.NullString{String: csvRecord[4], Valid: true},
+			ToeflScore:    sql.NullString{String: csvRecord[5], Valid: true},
 		})
 		if err != nil {
 			return err
